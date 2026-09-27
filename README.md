@@ -1,4 +1,4 @@
-# Netrunner Studio 1.0.3
+# Netrunner Studio 1.0.4
 
 O Netrunner Studio é um estúdio de produção ao vivo para Windows, com
 canvas horizontal 16:9 e vertical 9:16, Prévia/Programa, cenas, fontes,
@@ -14,32 +14,43 @@ instalação e verificação, nunca os arquivos-fonte próprios.
 
 ## Download e instalação
 
-Baixe a [Release 1.0.3](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases/tag/v1.0.3)
-e siga estes passos:
+Baixe direto o instalador na
+[Release 1.0.4](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases/tag/v1.0.4)
+(`NetrunnerStudio-Setup-1.0.4.exe`) e siga estes passos:
 
-1. Baixe `NetrunnerStudio-1.0.3-Installer-Windows-x64.zip`.
-2. Extraia o ZIP para uma pasta local.
-3. Execute `NetrunnerStudio-Setup-1.0.3.exe`.
-4. Abra o Netrunner Studio pelo atalho criado no Menu Iniciar ou na área de
+1. Baixe `NetrunnerStudio-Setup-1.0.4.exe`.
+2. Execute o instalador baixado.
+3. Abra o Netrunner Studio pelo atalho criado no Menu Iniciar ou na área de
    trabalho.
 
 O instalador é por usuário e não precisa de privilégios de administrador.
 Nesta versão bundled, Python, OBS Studio e plugin Spout2 instalados
-separadamente não são necessários para executar o app.
+separadamente não são necessários para executar o app. Um ZIP com o
+instalador + checksum (`NetrunnerStudio-1.0.4-Installer-Windows-x64.zip`)
+continua disponível na mesma Release para quem preferir.
 
 ## Verificação do download
 
-O ZIP inclui o arquivo `NetrunnerStudio-1.0.3-Installer.sha256`. Depois de
-extrair o instalador, no PowerShell execute:
+A Release publica `NetrunnerStudio-1.0.4-Installer.sha256` como arquivo
+separado. Depois de baixar o instalador, no PowerShell execute:
 
 ```powershell
-Get-FileHash .\NetrunnerStudio-Setup-1.0.3.exe -Algorithm SHA256
+Get-FileHash .\NetrunnerStudio-Setup-1.0.4.exe -Algorithm SHA256
 ```
 
 Compare o resultado com o hash publicado no arquivo `.sha256`. O instalador
 não possui assinatura Authenticode reconhecida (sem certificado pago); o
 Windows pode exibir um aviso do SmartScreen mesmo quando o hash está
 correto.
+
+## Novidades da 1.0.4
+
+- Faixa de áudio por plataforma no Multi-RTMP: cada saída de transmissão
+  (Twitch, YouTube, Kick, etc.) agora escolhe qual das 6 faixas de áudio
+  (Configurações → Áudio) ela recebe, permitindo mandar mixes diferentes
+  pra plataformas diferentes ao mesmo tempo -- por exemplo, uma plataforma
+  com o mix completo e outra sem o microfone, sem precisar de duas
+  transmissões separadas.
 
 ## Novidades da 1.0.3
 
