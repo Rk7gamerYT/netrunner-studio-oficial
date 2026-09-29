@@ -1,4 +1,4 @@
-# Netrunner Studio 1.1.0
+# Netrunner Studio 1.1.1
 
 O Netrunner Studio é um estúdio de produção ao vivo para Windows, com
 canvas horizontal 16:9 e vertical 9:16, Prévia/Programa, cenas, fontes,
@@ -15,10 +15,10 @@ instalação e verificação, nunca os arquivos-fonte próprios.
 ## Download e instalação
 
 Baixe direto o instalador na
-[Release 1.1.0](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases/tag/v1.1.0)
-(`NetrunnerStudio-Setup-1.1.0.exe`) e siga estes passos:
+[Release 1.1.1](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases/tag/v1.1.1)
+(`NetrunnerStudio-Setup-1.1.1.exe`) e siga estes passos:
 
-1. Baixe `NetrunnerStudio-Setup-1.1.0.exe`.
+1. Baixe `NetrunnerStudio-Setup-1.1.1.exe`.
 2. Execute o instalador baixado.
 3. Abra o Netrunner Studio pelo atalho criado no Menu Iniciar ou na área de
    trabalho.
@@ -26,22 +26,33 @@ Baixe direto o instalador na
 O instalador é por usuário e não precisa de privilégios de administrador.
 Nesta versão bundled, Python, OBS Studio e plugin Spout2 instalados
 separadamente não são necessários para executar o app. Um ZIP com o
-instalador + checksum (`NetrunnerStudio-1.1.0-Installer-Windows-x64.zip`)
+instalador + checksum (`NetrunnerStudio-1.1.1-Installer-Windows-x64.zip`)
 continua disponível na mesma Release para quem preferir.
 
 ## Verificação do download
 
-A Release publica `NetrunnerStudio-1.1.0-Installer.sha256` como arquivo
+A Release publica `NetrunnerStudio-1.1.1-Installer.sha256` como arquivo
 separado. Depois de baixar o instalador, no PowerShell execute:
 
 ```powershell
-Get-FileHash .\NetrunnerStudio-Setup-1.1.0.exe -Algorithm SHA256
+Get-FileHash .\NetrunnerStudio-Setup-1.1.1.exe -Algorithm SHA256
 ```
 
 Compare o resultado com o hash publicado no arquivo `.sha256`. O instalador
 não possui assinatura Authenticode reconhecida (sem certificado pago); o
 Windows pode exibir um aviso do SmartScreen mesmo quando o hash está
 correto.
+
+## Novidades da 1.1.1
+
+- Corrige importações de projetos e migrações OBS/Streamlabs que podiam ser
+  sobrescritas pelo autosave da sessão anterior.
+- Perfis agora restauram valores padrão e salvam os ajustes pendentes da janela
+  de Configurações.
+- A interface explica onde importar coleções de cenas e orienta aplicar e
+  reiniciar depois de importar um perfil.
+
+Consulte as [notas da 1.1.1](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases/tag/v1.1.1).
 
 ## Novidades da 1.1.0
 
