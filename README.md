@@ -1,11 +1,11 @@
-# Netrunner Studio 1.0.4
+# Netrunner Studio 1.0.5
 
 O Netrunner Studio é um estúdio de produção ao vivo para Windows, com
 canvas horizontal 16:9 e vertical 9:16, Prévia/Programa, cenas, fontes,
 mixer de áudio, transições e controles em um fluxo inspirado no OBS, com
 identidade própria.
 
-Esta é a primeira versão estável, depois de uma sequência de betas
+Esta é uma versão estável, depois de uma sequência de betas
 (B_0.5.0 a B_0.5.7) publicadas e testadas por usuários reais. Este
 repositório é o canal público de distribuição. O código próprio do
 Netrunner Studio permanece fechado no repositório privado de
@@ -15,10 +15,10 @@ instalação e verificação, nunca os arquivos-fonte próprios.
 ## Download e instalação
 
 Baixe direto o instalador na
-[Release 1.0.4](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases/tag/v1.0.4)
-(`NetrunnerStudio-Setup-1.0.4.exe`) e siga estes passos:
+[Release 1.0.5](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases/tag/v1.0.5)
+(`NetrunnerStudio-Setup-1.0.5.exe`) e siga estes passos:
 
-1. Baixe `NetrunnerStudio-Setup-1.0.4.exe`.
+1. Baixe `NetrunnerStudio-Setup-1.0.5.exe`.
 2. Execute o instalador baixado.
 3. Abra o Netrunner Studio pelo atalho criado no Menu Iniciar ou na área de
    trabalho.
@@ -26,22 +26,33 @@ Baixe direto o instalador na
 O instalador é por usuário e não precisa de privilégios de administrador.
 Nesta versão bundled, Python, OBS Studio e plugin Spout2 instalados
 separadamente não são necessários para executar o app. Um ZIP com o
-instalador + checksum (`NetrunnerStudio-1.0.4-Installer-Windows-x64.zip`)
+instalador + checksum (`NetrunnerStudio-1.0.5-Installer-Windows-x64.zip`)
 continua disponível na mesma Release para quem preferir.
 
 ## Verificação do download
 
-A Release publica `NetrunnerStudio-1.0.4-Installer.sha256` como arquivo
+A Release publica `NetrunnerStudio-1.0.5-Installer.sha256` como arquivo
 separado. Depois de baixar o instalador, no PowerShell execute:
 
 ```powershell
-Get-FileHash .\NetrunnerStudio-Setup-1.0.4.exe -Algorithm SHA256
+Get-FileHash .\NetrunnerStudio-Setup-1.0.5.exe -Algorithm SHA256
 ```
 
 Compare o resultado com o hash publicado no arquivo `.sha256`. O instalador
 não possui assinatura Authenticode reconhecida (sem certificado pago); o
 Windows pode exibir um aviso do SmartScreen mesmo quando o hash está
 correto.
+
+## Novidades da 1.0.5
+
+- Mixer horizontal/vertical, com controles compactos e atalhos SVG.
+- Menu de contexto do mixer, contador de ocultos e opções para fontes inativas.
+- Propriedades de áudio avançadas: mono, balanço, sincronização, monitoramento e faixas.
+- Sincronização de cenas vinculadas na Prévia do Modo Estúdio.
+- Ajustes de inicialização, janelas transitórias e consistência visual.
+
+Consulte as [notas da 1.0.5](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases/tag/v1.0.5),
+incluindo a limitação conhecida das janelas transitórias em algumas transições.
 
 ## Novidades da 1.0.4
 
@@ -180,7 +191,7 @@ Leva de estabilidade interna, sem mudança visível de funcionalidade:
 
 ## Avisos
 
-Esta é a primeira versão estável, mas ainda sem assinatura de código
+Esta é uma versão estável, mas ainda sem assinatura de código
 (certificado de assinatura não é viável no momento -- ver Licenças). Podem
 existir bugs, incompatibilidades com hardware específico ou avisos do
 antivírus/SmartScreen. Para reportar um problema, informe a versão do
