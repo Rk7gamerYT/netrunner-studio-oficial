@@ -49,6 +49,7 @@ correto.
 - Menu de contexto do mixer, contador de ocultos e opções para fontes inativas.
 - Propriedades de áudio avançadas: mono, balanço, sincronização, monitoramento e faixas.
 - Sincronização de cenas vinculadas na Prévia do Modo Estúdio.
+- Recorte direto no canvas com Alt + arrastar e bordas roxas para indicar o modo.
 - Ajustes de inicialização, janelas transitórias e consistência visual.
 
 Consulte as [notas da 1.0.5](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases/tag/v1.0.5),

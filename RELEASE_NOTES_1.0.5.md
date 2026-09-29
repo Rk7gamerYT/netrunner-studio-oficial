@@ -16,6 +16,8 @@
 
 - Cenas vinculadas também sincronizam a Prévia do Modo Estúdio, preservando
   as cenas que estão no Programa até enviar a transição.
+- Recorte direto no canvas: selecione a fonte e arraste uma borda segurando
+  Alt. A borda roxa indica o recorte; Ctrl+Z desfaz a alteração.
 - Corrigido o preenchimento invertido do fader vertical e refinado o espaço
   dos controles, menus e tabela de áudio avançado.
 - Mais ícones SVG nos menus de cenas, fontes, filtros e painéis.
