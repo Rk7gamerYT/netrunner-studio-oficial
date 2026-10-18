@@ -1,19 +1,28 @@
 Netrunner Studio — licença do código proprietário
 ===================================================
 
-Copyright (c) 2026 Netrunner Studio.
+Copyright (c) 2026 Netrunner Studio. Todos os direitos reservados.
 
-Os arquivos próprios do Netrunner Studio, incluindo o código em app/,
-native/libobs-next/, os scripts de empacotamento e os assets de marca, são
-proprietários. Nenhuma licença de redistribuição, modificação, sublicença ou
-acesso ao código-fonte é concedida, exceto mediante autorização escrita do
-titular ou quando a lei aplicável exigir.
+Os arquivos próprios do Netrunner Studio e do NetEngine (o aplicativo em app/, o motor
+netengine_host.exe e netengine_presenter.dll, os scripts de empacotamento e os assets de
+marca) são proprietários. Nenhuma licença de redistribuição, modificação, sublicença ou
+acesso ao código-fonte é concedida, exceto mediante autorização escrita do titular ou
+quando a lei aplicável exigir.
 
 Este aviso NÃO se aplica às dependências de terceiros. As licenças e links
-correspondentes estão em THIRD_PARTY_NOTICES.md. Em particular, OBS Studio,
-PySide6/Qt e outras dependências mantêm suas próprias licenças, que prevalecem
-sobre este aviso na parte correspondente.
+correspondentes estão em THIRD_PARTY_NOTICES.md (Studio) e
+THIRD_PARTY_NOTICES_NETENGINE.md (motor), e os textos em licenses\ e netengine\. As
+licenças de terceiros prevalecem sobre este aviso na parte correspondente.
 
-IMPORTANTE PARA A DISTRIBUIÇÃO: o Netrunner Studio usa PySide6 na opção LGPL.
-O instalador deve manter os avisos de terceiros e não pode retirar os direitos
-previstos pela LGPL para as bibliotecas Qt correspondentes.
+Bibliotecas LGPL (Qt/PySide6 e FFmpeg)
+--------------------------------------
+O Netrunner Studio usa o Qt for Python (PySide6) e o FFmpeg sob a LGPL-3.0, ligados
+dinamicamente (DLLs separadas, na pasta de instalação e em netengine\). Você pode
+substituí-las por versões compatíveis. Nada neste aviso, nem em qualquer termo de uso do
+Netrunner Studio, restringe esse direito nem proíbe a engenharia reversa estritamente
+necessária para depurar essas substituições. O texto da LGPL-3.0 acompanha o pacote
+(licenses\LGPL-3.0.txt e netengine\FFmpeg-LICENSE.txt).
+
+IMPORTANTE PARA A DISTRIBUIÇÃO: o instalador deve manter os avisos de terceiros, os
+textos de licença e as ofertas de código-fonte, e não pode retirar os direitos
+previstos pela LGPL para as bibliotecas correspondentes.
