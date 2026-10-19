@@ -14,7 +14,7 @@ desenvolvimento; aqui ficam só os instaladores (nas
 [Releases](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases)),
 os avisos de licença e as notas de cada versão.
 
-**Versão atual: 2.3.3.** Site oficial: <https://netrunnerstream.com.br/studio>.
+**Versão atual: 2.3.4.** Site oficial: <https://netrunnerstream.com.br/studio>.
 
 ## Download e instalação
 
@@ -76,17 +76,17 @@ Get-FileHash .\NetrunnerStudio-Setup-X.Y.Z.exe -Algorithm SHA256
 Só instale se o resultado for igual ao publicado. O GitHub também mostra o
 SHA-256 de cada arquivo na página da Release.
 
-## Novidades da 2.3.3
+## Novidades da 2.3.4
 
-- **Placas AMD (Radeon RX 6000, 7000 e 9000):** o modo automático escolhe o AMF
-  antes do Vulkan Video, e quem tinha ficado preso no Vulkan Video volta para
-  "Automático" na primeira abertura.
-- **Modo Estúdio:** renomear uma cena atualiza também a Prévia.
-- **WebSocket:** com a senha ligada e ainda vazia, o servidor não aceita mais
-  senha vazia; uma senha é gerada ao salvar.
-- **Prévias pausadas** com a janela minimizada ou coberta, economizando GPU.
-- **Visual novo:** o gradiente da marca como único destaque, barra superior
-  compacta com seletor de canvas e estado ao vivo, e textos que cabem a 1280x720.
+- **Kick:** a live volta a funcionar com o novo formato da Kick, em que o
+  endereço do servidor e a chave vêm separados. A chave não é repetida se
+  também estiver colada no endereço.
+- **Prévia, live e gravação** não congelam mais depois de deixar o app
+  minimizado e trocar de cena.
+- **Capturas:** uma captura que não carrega na hora fica de fora só daquele
+  quadro, sem derrubar o vídeo inteiro.
+- **Trocar de cena** não mostra mais o aviso "scene … does not exist".
+- **MP4 automático** não tenta mais converter gravações vazias.
 
 O histórico de todas as versões está no [CHANGELOG](CHANGELOG.md), e as notas
 completas de cada uma, na [página de Releases](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases).

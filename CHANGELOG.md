@@ -5,6 +5,7 @@ hashes ficam na página de cada [Release](https://github.com/Rk7gamerYT/netrunne
 
 ## 2.3 — interface renovada
 
+- **[2.3.4](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases/tag/v2.3.4):** a live na Kick volta a funcionar com o novo formato (servidor e chave separados); prévia, live e gravação não congelam mais depois de minimizar o app e trocar de cena; uma captura que falha não derruba mais o vídeo; sem o aviso de cena inexistente ao trocar de cena; o MP4 automático ignora gravações vazias.
 - **[2.3.3](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases/tag/v2.3.3):** placas AMD (RX 6000, 7000 e 9000) passam a usar o AMF no modo automático; renomear cena atualiza a Prévia do Modo Estúdio; WebSocket não aceita mais senha vazia; prévias pausadas com a janela minimizada ou coberta; tema com o gradiente da marca e barra superior compacta.
 - **[2.3.2](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases/tag/v2.3.2):** menos uso de GPU na composição das cenas, NVENC sem leitura de volta pela CPU e fontes de navegador pela placa de vídeo; Multi-RTMP com outra faixa de áudio volta a ter som; atalhos com AltGr, teclado numérico e F13–F24; o WebView2 deixa de ser usado (só o Chromium embutido).
 - **[2.3.1](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases/tag/v2.3.1):** sem CPU alta quando um dispositivo de áudio salvo some; mais memória para muitas fontes de navegador em placas com pouca memória.
