@@ -14,7 +14,7 @@ desenvolvimento; aqui ficam só os instaladores (nas
 [Releases](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases)),
 os avisos de licença e as notas de cada versão.
 
-**Versão atual: 2.3.4.** Site oficial: <https://netrunnerstream.com.br/studio>.
+**Versão atual: 2.3.5.** Site oficial: <https://netrunnerstream.com.br/studio>.
 
 ## Download e instalação
 
@@ -76,17 +76,19 @@ Get-FileHash .\NetrunnerStudio-Setup-X.Y.Z.exe -Algorithm SHA256
 Só instale se o resultado for igual ao publicado. O GitHub também mostra o
 SHA-256 de cada arquivo na página da Release.
 
-## Novidades da 2.3.4
+## Novidades da 2.3.5
 
-- **Kick:** a live volta a funcionar com o novo formato da Kick, em que o
-  endereço do servidor e a chave vêm separados. A chave não é repetida se
-  também estiver colada no endereço.
-- **Prévia, live e gravação** não congelam mais depois de deixar o app
-  minimizado e trocar de cena.
-- **Capturas:** uma captura que não carrega na hora fica de fora só daquele
-  quadro, sem derrubar o vídeo inteiro.
-- **Trocar de cena** não mostra mais o aviso "scene … does not exist".
-- **MP4 automático** não tenta mais converter gravações vazias.
+- **Fontes de página sem pesar no processador:** o navegador embutido agora
+  é obrigado a usar a placa de vídeo. Se mesmo assim ele não conseguir, a
+  página é desligada e o Studio avisa, em vez de levar o processador a 100%.
+  Fechar e abrir o Studio traz as páginas de volta.
+- **Página que trava** é recarregada sozinha (até três vezes).
+- **AMD Radeon RX 6600 / 6600M** com o driver 32.0.21045.5002: o Vulkan
+  Video fica desligado nessa combinação, e o AMD AMF codifica no lugar.
+- **Teste de hardware** não fecha mais quando a Área de Trabalho tem acento
+  no caminho, e explica melhor o resultado "Inconcluso".
+- **Pacote de diagnóstico** mostra o uso do processador por parte, os últimos
+  10 minutos e os travamentos e resets do driver da última semana.
 
 O histórico de todas as versões está no [CHANGELOG](CHANGELOG.md), e as notas
 completas de cada uma, na [página de Releases](https://github.com/Rk7gamerYT/netrunner-studio-oficial/releases).
